@@ -1,0 +1,26 @@
+body{
+	background-color:rgb(200,220,225);
+	
+}
+
+.added-class{
+	background-color:grey;
+	color:white;
+}
+
+.footer{
+	background-color:blue;
+	height:47px;
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+	width:100%;
+	
+}
+
+.imagescript{
+	background-color:grey;
+	color:white;
+	border:solid 6px white;
+
+}
