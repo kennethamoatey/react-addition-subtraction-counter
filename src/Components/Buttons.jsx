@@ -2,7 +2,7 @@ import React from "react";
 
 const Buttons=(props)=>{
     return<div className="col-md-6">
-        <button onClick={props.buttonClick}>
+        <button onClick={props.buttonClick} style={{textAlign:"justify"}}>
         {props.text}
         </button>
     </div>
