@@ -24,21 +24,25 @@ class Counter extends Component {
     render(){
        
            
-        return <div className='' style={{textAlign:"center"}}>
-                    <div className='row'>
+        return <div className='' style={{textAlign:"center" }}>
+
+             <div className='row'>
                         <div className="col-md-12">
                         <h1>{this.state.number}</h1>
                         </div>
+                   
+                    
+
+                       
                     </div >
-                
-                    <div className="row" style={{height:"8px", }}>
+                    <div className="row" >
         
                             <div className="col-md-6">    
-                                <Buttons text="+" buttonClick={this.IncreaseClick}/>
+                                <Buttons text="Increase" buttonClick={this.IncreaseClick}/>
                             
                             </div>
                             <div className="col-md-6">
-                                <Buttons text="-" buttonClick={this.DecreaseClick}/>
+                                <Buttons text="Decrease" buttonClick={this.DecreaseClick}/>
                             </div>
                         
                         
