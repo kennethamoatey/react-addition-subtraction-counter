@@ -1,42 +1,51 @@
-import React, {useState} from "react";
-import Buttons from './Buttons'
+import React, {Component} from "react";
+import Buttons from './Buttons';
 
 
 
-const Counter=()=>{
+class Counter extends Component {
 
-    let [number, setNumber]= useState(0);
+     constructor() {
+            super();
 
-    const increaseClick=()=>{
-    setNumber(number+=1);
-}
+            this.state={
+                number:0,
+            };
+        }
 
-const decreaseClick=()=>{
-    setNumber(number-=1)
-}
+         DecreaseClick=()=>{
+        this.setState({number:this.state.number-1})
+         }
+            IncreaseClick=()=>{
+        this.setState({number:this.state.number+1});
+         }
 
-    return <div className='' style={{textAlign:"center"}}>
-                <div className='row'>
-                    <div className="col-md-12">
-                    <h1>{number}</h1>
-                    </div>
-                </div >
+
+    render(){
+       
+           
+        return <div className='' style={{textAlign:"center"}}>
+                    <div className='row'>
+                        <div className="col-md-12">
+                        <h1>{this.state.number}</h1>
+                        </div>
+                    </div >
                 
-                <div className="row" style={{height:"8px"}}>
-                    <div className="col-md-6">
-                    
-                        <Buttons text="+" buttonClick={increaseClick}/>
-                    </div>
-                    <div className="col-md-6">
-                    
-                        <Buttons text="-" buttonClick={decreaseClick}/>
-                    
-                    
-                    </div>
-                
-                </div>
-                
+                    <div className="row" style={{height:"8px", }}>
         
-            </div>
+                            <div className="col-md-6">    
+                                <Buttons text="+" buttonClick={this.IncreaseClick}/>
+                            
+                            </div>
+                            <div className="col-md-6">
+                                <Buttons text="-" buttonClick={this.DecreaseClick}/>
+                            </div>
+                        
+                        
+                        
+                    </div>    
+                </div>    
+                
+    }
 }
 export default Counter;

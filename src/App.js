@@ -1,5 +1,5 @@
 import Counter from './Components/Counter.jsx'
-
+import ClassCounter from './Components/ClassCounter.jsx'
 
 import './App.css';
 
@@ -15,6 +15,7 @@ const App=()=>{
               
               
                 <Counter/>
+                < ClassCounter />
                 
             
               </div>
