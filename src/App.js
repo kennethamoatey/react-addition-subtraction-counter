@@ -11,7 +11,9 @@ const App=()=>{
               
               <div className="body">
                   <div className="row">
-                    <h1  className="col-md-12 topic">REACT COUNTER</h1>
+                    <p>
+                      <h1  className="col-md-12 topic">REACT COUNTER</h1>
+                    </p>
                   </div>
 
                    
